@@ -1,0 +1,11 @@
+@mixin dimensions($height:auto,$width:auto) {
+  height: $height;
+  width: $width;
+}
+
+img {
+  @include dimensions;
+}
+h1 {
+  @include dimensions($height:100px,$width:100%);
+}
